@@ -1,0 +1,123 @@
+/**
+ *  If you want to override bootstrap variables, add changes to the relevant file.
+ *  The list of variables are listed here bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss
+ */
+@import "override/alerts.scss";
+@import "override/badges.scss";
+@import "override/breadcrumbs.scss";
+@import "override/button-groups.scss";
+@import "override/buttons.scss";
+@import "override/carousel.scss";
+@import "override/close.scss";
+@import "override/code.scss";
+@import "override/component-animations.scss";
+@import "override/dropdowns.scss";
+@import "override/forms.scss";
+@import "override/glyphicons.scss";
+@import "override/grid.scss";
+@import "override/input-groups.scss";
+@import "override/jumbotron.scss";
+@import "override/labels.scss";
+@import "override/list-group.scss";
+@import "override/media.scss";
+@import "override/mixins.scss";
+@import "override/modals.scss";
+@import "override/navbar.scss";
+@import "override/navs.scss";
+@import "override/normalize.scss";
+@import "override/pager.scss";
+@import "override/pagination.scss";
+@import "override/panels.scss";
+@import "override/popovers.scss";
+@import "override/print.scss";
+@import "override/progress-bars.scss";
+@import "override/responsive-embed.scss";
+@import "override/responsive-utilities.scss";
+@import "override/scaffolding.scss";
+@import "override/tables.scss";
+@import "override/theme.scss";
+@import "override/thumbnails.scss";
+@import "override/tooltip.scss";
+@import "override/type.scss";
+@import "override/utilities.scss";
+@import "override/variables.scss";
+@import "override/wells.scss";
+
+/**
+ *  If you want to override bootstrap mixins, add changes to the relevant file.
+ *  The list of variables are listed here bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss
+ */
+@import "override/mixins/alerts.scss";
+@import "override/mixins/background-variant.scss";
+@import "override/mixins/border-radius.scss";
+@import "override/mixins/buttons.scss";
+@import "override/mixins/center-block.scss";
+@import "override/mixins/clearfix.scss";
+@import "override/mixins/forms.scss";
+@import "override/mixins/gradients.scss";
+@import "override/mixins/grid.scss";
+@import "override/mixins/grid-framework.scss";
+@import "override/mixins/hide-text.scss";
+@import "override/mixins/image.scss";
+@import "override/mixins/labels.scss";
+@import "override/mixins/list-group.scss";
+@import "override/mixins/nav-divider.scss";
+@import "override/mixins/nav-vertical-align.scss";
+@import "override/mixins/opacity.scss";
+@import "override/mixins/pagination.scss";
+@import "override/mixins/panels.scss";
+@import "override/mixins/progress-bar.scss";
+@import "override/mixins/reset-filter.scss";
+@import "override/mixins/reset-text.scss";
+@import "override/mixins/resize.scss";
+@import "override/mixins/responsive-visibility.scss";
+@import "override/mixins/size.scss";
+@import "override/mixins/tab-focus.scss";
+@import "override/mixins/table-row.scss";
+@import "override/mixins/text-emphasis.scss";
+@import "override/mixins/text-overflow.scss";
+@import "override/mixins/vendor-prefixes.scss";
+
+@import "abacus/variables.scss";
+@import "abacus/main.scss";
+
+/**
+ *  Do not remove the comments below. It's the markers used by wiredep to inject
+ *  sass dependencies when defined in the bower.json of your dependencies
+ */
+// bower:scss
+// endbower
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: $light-gray;
+  color: $black;
+  padding: 0.2em 0;
+}
+
+html, body, #root {
+    height: 100%;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.fixed {
+    position: fixed;
+}
+
+/**
+ *  Do not remove the comments below. It's the markers used by gulp-inject to inject
+ *  all your less files automatically
+ */
+// injector
+// endinjector

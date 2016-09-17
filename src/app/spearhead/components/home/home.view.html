@@ -1,0 +1,55 @@
+<div>
+    <spearhead-navbar />
+</div>
+
+
+<div id="wrapper">
+
+    <div>
+        <spearhead-sidebar />
+    </div>
+
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="jumbotron text-center">
+                        <h1 id="title">SPEARHEAD</h1>
+                        <p class="lead">
+                            <img src="../../assets/img/logo.png" alt="Spearhead" height="150px">
+                            <br> A front-end UI template.
+                        </p>
+                        <p>
+                            <i>Created by David Norton.</i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <input type="text" name="fname">
+
+            <div class="row">
+                <div class="col-sm-6 col-md-4" ng-repeat="technologyList in main.technologyList | orderBy:'rank'">
+                    <div class="thumbnail">
+                        <img class="pull-right" ng-src="assets/images/{{ technologyList.logo }}" alt="{{ technologyList.title }}">
+                        <div class="caption">
+                            <h3>{{ technologyList.title }}</h3>
+                            <p>{{ technologyList.description }}</p>
+                            <p><a ng-href="{{technologyList.url}}">{{ technologyList.url }}</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>

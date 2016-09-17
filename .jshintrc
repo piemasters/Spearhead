@@ -1,0 +1,31 @@
+ {
+     "undef": true,
+     "node": true,
+     "esnext": true,
+
+     "globals": {
+         "angular": true,
+         "module": true,
+         "inject": true,
+
+         "karma": true,
+         "jasmine": true,
+         "describe": true,
+         "beforeEach": true,
+         "afterEach": true,
+         "it": true,
+         "expect": true,
+         "spyOn": true,
+
+         "protractor": true,
+         "browser": true,
+         "element": true,
+         "by": true,
+
+         "$": true,
+         "jQuery": true,
+
+         "d3": true,
+         "visavailChart": true
+     }
+ }

@@ -1,0 +1,23 @@
+<nav class="navbar navbar-fixed-top navbar-inverse">
+    <div class="container-fluid">
+
+        <div class="navbar-header">
+            <a class="navbar-brand" ui-sref="main">
+                <span class="glyphicon glyphicon-home"></span> &nbsp; Abacus
+            </a>
+        </div>
+
+        <div class="collapse navbar-collapse navbar-left">
+            <ul class="nav navbar-nav">
+                <li id="nav-home" ng-class="{ active: isActive('/')}"><a ui-sref="main">Home</a></li>
+                <li id="nav-about" ng-class="{ active: isActive('/about')}"><a ui-sref="about">Docs</a></li>
+                <li id="nav-kpis" ng-class="{ active: isActive('/ab_dashboard')}"><a ui-sref="ab_dashboard">Material Design</a></li>
+            </ul>
+        </div>
+
+        <ul class="nav navbar-nav navbar-right navbar-date">
+            <time></time>
+        </ul>
+    </div>
+
+</nav>

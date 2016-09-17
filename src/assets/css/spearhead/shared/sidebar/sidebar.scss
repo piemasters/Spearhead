@@ -1,0 +1,192 @@
+// HAMBURGER COLOR
+$hamburger-color-closed: fadeout(#222, 30);
+$hamburger-color-open: #222;
+
+
+#wrapper {
+    margin-top: 30px;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 900;
+    position: fixed;
+    left: 250px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    transition: all 0.5s ease;
+    background-color: #222;
+    background-color: #222;
+}
+
+#wrapper.toggled, #wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+    padding-left: 55px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+}
+
+.sidebar-nav li a:hover,
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+    margin-top: 50px;
+}
+
+.hamburger {
+    background: transparent;
+    border: none;
+    display: block;
+    height: 32px;
+    margin-left: 15px;
+    position: fixed;
+    top: 70px;
+    width: 32px;
+    z-index: 10;
+    &:hover,
+    &:focus,
+    &:active {
+        outline: none;
+    }
+}
+
+.hamburger.is-closed {
+    &:before {
+        transform: translate3d(0, 0, 0);
+        transition: all .35s ease-in-out;
+        color: #222;
+        content: '';
+        display: block;
+        font-size: 14px;
+        line-height: 32px;
+        opacity: 0;
+        text-align: center;
+        width: 100px;
+    }
+    &:hover {
+        before {
+            transform: translate3d(-100px, 0, 0);
+            transition: all .35s ease-in-out;
+            display: block;
+            opacity: 1;
+        }
+        .hamb-top {
+            transition: all .35s ease-in-out;
+            top: 0;
+        }
+        .hamb-bottom {
+            transition: all .35s ease-in-out;
+            bottom: 0;
+        }
+    }
+    .hamb-top {
+        transition: all .35s ease-in-out;
+        background-color: $hamburger-color-closed;
+        top: 5px;
+    }
+    .hamb-middle {
+        background-color: $hamburger-color-closed;
+        margin-top: -2px;
+        top: 50%;
+    }
+    .hamb-bottom {
+        transition: all .35s ease-in-out;
+        background-color: $hamburger-color-closed;
+        bottom: 5px;
+    }
+}
+
+.hamburger.is-closed .hamb-top,
+.hamburger.is-closed .hamb-middle,
+.hamburger.is-closed .hamb-bottom,
+.hamburger.is-open .hamb-top,
+.hamburger.is-open .hamb-middle,
+.hamburger.is-open .hamb-bottom {
+    height: 4px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    background-color: #222;
+}
+
+.hamburger.is-open {
+    .hamb-top {
+        transform: rotate(45deg);
+        transition: transform .2s cubic-bezier(.73, 1, .28, .08);
+        background-color: $hamburger-color-open;
+        margin-top: -2px;
+        top: 50%;
+    }
+    .hamb-middle {
+        background-color: $hamburger-color-open;
+        display: none;
+    }
+    .hamb-bottom {
+        transform: rotate(-45deg);
+        transition: transform .2s cubic-bezier(.73, 1, .28, .08);
+        background-color: $hamburger-color-open;
+        margin-top: -2px;
+        top: 50%;
+    }
+    &:before {
+        transform: translate3d(0, 0, 0);
+        transition: all .35s ease-in-out;
+        color: #222;
+        content: '';
+        display: block;
+        font-size: 14px;
+        line-height: 32px;
+        opacity: 0;
+        text-align: center;
+        width: 100px;
+    }
+    &:hover {
+        before {
+            transform: translate3d(-100px, 0, 0);
+            transition: all .35s ease-in-out;
+            display: block;
+            opacity: 1;
+        }
+    }
+}
