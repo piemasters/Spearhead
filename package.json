@@ -1,0 +1,14 @@
+  "name": "david-norton-portfolio",
+  "version": "0.0.1",
+  "description": "A portfolio to display past work.",
+  "author": "David Norton <norton_david@live.co.uk>",
+  "scripts": {
+
+  },
+  "dependencies": {},
+  "devDependencies": {
+
+  },
+  "private": true,
+  "license": "MIT"
+}
