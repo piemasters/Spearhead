@@ -4,6 +4,7 @@
   "description": "A portfolio to display past work.",
   "author": "David Norton <norton_david@live.co.uk>",
   "scripts": {
+    "start": "gulp serve",
     "build": "gulp",
     "serve": "gulp serve",
     "serve:dist": "gulp serve:dist",
