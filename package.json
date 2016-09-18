@@ -8,12 +8,12 @@
   },
   "scripts": {
     "build": "gulp",
-    "postinstall": "./node_modules/bower/bin/bower install",
     "serve": "gulp serve",
     "serve:dist": "gulp serve:dist",
     "test": "gulp test",
     "test:auto": "gulp test:auto",
-    "start": "gulp serve"
+    "start": "gulp serve",
+    "postinstall": "bower install"
   },
   "dependencies": {
     "babel-core": "~6.7.4",
