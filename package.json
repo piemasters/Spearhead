@@ -12,7 +12,7 @@
     "serve:dist": "gulp serve:dist",
     "test": "gulp test",
     "test:auto": "gulp test:auto",
-    "start": "gulpfile.js"
+    "start": "gulp"
   },
   "dependencies": {
     "gulp": "^3.9.1",
