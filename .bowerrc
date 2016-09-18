@@ -1,5 +1,3 @@
 {
-  "http-proxy": "http://proxy.logica.com:80",
-  "https-proxy": "http://proxy.logica.com:80",
   "directory": "bower_components"
 }
