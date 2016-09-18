@@ -36,7 +36,8 @@
     "gulp-sourcemaps": "~1.6.0",
     "gulp-uglify": "~1.4.1",
     "gulp-useref": "~3.0.3",
-    "gulp-util": "~3.0.6"
+    "gulp-util": "~3.0.6",
+    "require-dir": "^0.3.0"
   },
   "devDependencies": {
     "babel-core": "~6.7.4",
@@ -68,7 +69,6 @@
     "ng-annotate-loader": "0.0.10",
     "phantomjs": "~1.9.18",
     "protractor": "^3.3.0",
-    "require-dir": "^0.3.0",
     "selenium-webdriver": "^2.53.2",
     "uglify-save-license": "~0.4.1",
     "webpack-stream": "~2.1.1",
