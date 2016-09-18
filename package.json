@@ -3,13 +3,16 @@
   "version": "0.0.1",
   "description": "A portfolio to display past work.",
   "author": "David Norton <norton_david@live.co.uk>",
+  "engines": {
+    "node": "4.4.4"
+  },
   "scripts": {
-    "start": "node dist/scripts/app-9b36719e4c.js",
     "build": "gulp",
     "serve": "gulp serve",
     "serve:dist": "gulp serve:dist",
     "test": "gulp test",
-    "test:auto": "gulp test:auto"
+    "test:auto": "gulp test:auto",
+    "start": "gulpfile.js"
   },
   "dependencies": {
     "gulp": "^3.9.1",
