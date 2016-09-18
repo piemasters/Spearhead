@@ -1,0 +1,77 @@
+.page-content {
+    height: 100%;
+}
+
+.theme {
+    background-color: $primary-color;
+}
+
+.theme-text {
+    color: $primary-color;
+}
+
+.ok {
+    background-color: $ok;
+}
+
+.ok-text {
+    color: $ok !important;
+    &:hover {
+         filter: brightness(90%);
+    }
+}
+
+.error {
+    background-color: $error;
+}
+
+.error-text {
+    color: $error !important;
+        &:hover {
+         filter: brightness(90%);
+    }
+}
+
+.paused {
+    background-color: $paused;
+}
+
+.paused-text {
+    color: $paused !important;
+        &:hover {
+         filter: brightness(90%);
+    }
+}
+
+.stopped {
+    background-color: $stopped;
+}
+
+.stopped-text {
+    color: $stopped !important;
+        &:hover {
+         filter: brightness(90%);
+    }
+}
+
+.warning {
+    background-color: $warning;
+}
+
+.warning-text {
+    color: $warning !important;
+        &:hover {
+         filter: brightness(90%);
+    }
+}
+
+.disabled {
+    background-color: $disabled;
+}
+
+.disabled-text {
+    color: $disabled !important;
+        &:hover {
+         filter: brightness(90%);
+    }
+}
