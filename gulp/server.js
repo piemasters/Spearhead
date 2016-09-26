@@ -8,6 +8,7 @@
 var path = require('path');
 var gulp = require('gulp');
 var conf = require('./conf');
+var connect = require('gulp-connect');
 
 var browserSync = require('browser-sync');
 var browserSyncSpa = require('browser-sync-spa');
@@ -62,6 +63,18 @@ gulp.task('serve', ['watch'], function () {
  */
 gulp.task('serve:dist', ['build'], function () {
   browserSyncInit(conf.paths.dist);
+});
+
+
+/**
+ * Deploy production application to heroku.
+ */
+gulp.task('heroku:production', ['build'], function(){
+    connect.server({
+    root: [conf.paths.dist],
+    port: process.env.PORT || 5000,
+    livereload: false
+  });
 });
 
 /**

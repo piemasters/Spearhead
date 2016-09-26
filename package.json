@@ -12,7 +12,7 @@
     "serve:dist": "gulp serve:dist",
     "test": "gulp test",
     "test:auto": "gulp test:auto",
-    "start": "gulp serve",
+    "start": "gulp heroku:production",
     "postinstall": "bower install"
   },
   "dependencies": {
@@ -32,6 +32,7 @@
     "gulp": "^3.9.1",
     "gulp-angular-templatecache": "~1.8.0",
     "gulp-autoprefixer": "~3.0.2",
+    "gulp-connect": "~5.0.0",
     "gulp-cssnano": "~2.1.1",
     "gulp-eslint": "~1.0.0",
     "gulp-filter": "~3.0.1",
